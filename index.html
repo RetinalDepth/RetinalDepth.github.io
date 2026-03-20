@@ -12,35 +12,14 @@
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
 <body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://bingwendong.github.io/">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-    </div>
-  </div>
-</nav>
-
 
 <section class="hero">
   <div class="hero-body">
@@ -48,53 +27,90 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Real2Sim2Real: RetinalDepth-64K for Depth Estimation in Posterior Segment Ophthalmic Surgery</h1>
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-5 publication-authors author-list">
             <span class="author-block">
-              <a href="https://bingwendong.github.io/">Bingwen Dong</a>,</span>
-            <span class="author-block">
-              <a href="https://www.ganliu.blog/">Gan Liu</a>,</span>
-            <span class="author-block">
-              Xiaoxi Lu,
+              <a href="https://bingwendong.github.io/">Bingwen Dong</a><sup>1</sup>
             </span>
             <span class="author-block">
-              Guangcheng Chen,
+              <a href="https://www.ganliu.blog/">Gan Liu</a><sup>1</sup>
             </span>
             <span class="author-block">
-              Jialu ZHANG,
+              Xiaoxi Lu<sup>1</sup>
             </span>
             <span class="author-block">
-              Yan Hu,
+              Guangcheng Chen<sup>1</sup>
             </span>
             <span class="author-block">
-              Xiaoqing Zhang,
+              Jialu ZHANG<sup>1</sup>
             </span>
             <span class="author-block">
-              Jiang Liu
+              Yan Hu<sup>1</sup>
+            </span>
+            <span class="author-block">
+              Xiaoqing Zhang<sup>1*</sup>
+            </span>
+            <span class="author-block">
+              Jiang Liu<sup>1*</sup>
             </span>
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Subject Area: Datasets and evaluation</span>
+          <div class="is-size-5 publication-authors publication-institutions">
+            <span class="author-block"><sup>1</sup>SUSTech</span>
+          </div>
+
+          <div class="is-size-5 publication-authors publication-notes">
+            <span class="author-block"><sup>*</sup> corresponding author</span>
+          </div>
+
+          <div class="publication-venue is-size-4 has-text-centered">
+            CVPR 2026
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://bingwendong.github.io/"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="#"
+                   class="external-link button is-normal is-rounded publication-link-button">
                   <span class="icon">
-                      <i class="fas fa-home"></i>
+                      <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>Bingwen Dong</span>
+                  <span>arXiv</span>
                   </a>
               </span>
               <span class="link-block">
                 <a href="#paper-information"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded publication-link-button">
                   <span class="icon">
-                      <i class="fas fa-info-circle"></i>
+                      <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper Information</span>
+                  <span>Paper</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded publication-link-button">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded publication-link-button">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Demo</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded publication-link-button">
+                  <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                  </span>
+                  <span>DA-2K Benchmark</span>
                   </a>
               </span>
             </div>
@@ -106,108 +122,37 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="section abstract-section" id="abstract">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        RetinalDepth-64K is a Real2Sim2Real synthetic dataset with 64,000 stereo image pairs across
-        1,280 diverse scenes for depth estimation in posterior segment ophthalmic surgery.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Accurate depth estimation is crucial for 3D reconstruction and precise navigation in
-            ophthalmic fundus surgery. However, acquiring annotated data remains challenging due to
-            the impracticality of depth sensors under surgical microscopes.
-          </p>
-          <p>
-            To overcome this limitation, we introduce RetinalDepth-64K, a novel synthetic dataset
-            comprising 64,000 stereo image pairs across 1,280 diverse scenes, developed through a
-            Real2Sim2Real pipeline that transforms real-world fundus surgery videos into synthetic
-            data and facilitates model deployment in real scenarios. We analyzed key
-            characteristics such as intricate retinal textures from real-world videos to guide the
-            Real-to-Sim phase, enabling realistic data synthesis.
-          </p>
-          <p>
-            To improve dataset fidelity for depth estimation, we created 3D eye models using
-            Blender with ultra-wide-field retinal textures, glass-modeled aqueous humor, and
-            dynamic instrument trajectories, enhanced by post-processing to ensure photorealism.
-            The dataset provides RGB images, depth maps, normal maps, and instrument segmentation
-            masks from binocular views, supporting the training of monocular, binocular, and
-            video-based depth estimation models to enhance robustness.
-          </p>
-          <p>
-            In the Sim-to-Real phase, quantitative and qualitative experiments show that finetuning
-            foundation models with RetinalDepth-64K produces accurate depth predictions for
-            synthetic data. Comparative analysis on results of zeroshot and finetuned models
-            further validates robust generalization to real fundus surgery scenes, offering
-            significant potential to enhance surgical precision and support the training of novice
-            surgeons through reliable depth cues. As the first dataset of its kind for retinal
-            surgery, RetinalDepth-64K offers a vital resource for advancing 3D reconstruction and
-            surgical navigation in ophthalmology.
-          </p>
+        <h2 class="title is-3 has-text-centered">Abstract</h2>
+        <div class="content has-text-justified abstract-placeholder">
+          <p>Accurate depth estimation is crucial for 3D reconstruction and precise navigation in ophthalmic fundus surgery. However, acquiring annotated data remains challenging due to the impracticality of depth sensors under surgical microscopes. To overcome this limitation, we introduce RetinalDepth-64K, a novel synthetic dataset comprising 64,000 stereo image pairs across 1,280 diverse scenes, developed through a Real2Sim2Real pipeline that transforms real-world fundus surgery videos into synthetic data and facilitates model deployment in real scenarios. We analyzed key characteristics such as intricate retinal textures from real-world videos to guide the Real-to-Sim phase, enabling realistic data synthesis. To improving dataset fidelity for depth estimation, we created 3D eye models using Blender with ultra-wide-field retinal textures, glass-modeled aqueous humor, and dynamic instrument trajectories, enhanced by post-processing to ensure photorealism. The dataset provides RGB images, depth maps, normal maps, and instrument segmentation masks from binocular view, supporting the training of monocular, binocular, and video-based depth estimation models to enhance robustness. In the Sim-to-Real phase, quantitative and qualitative experiments show that finetuning foundation models with RetinalDepth-64K produces accurate depth predictions for synthetic data. Comparative analysis on results of zeroshot and finetuned models further validates robust generalization to real fundus surgery scenes, offering significant potential to enhance surgical precision and support the training of novice surgeons through reliable depth cues. As the first dataset of its kind for retinal surgery, RetinalDepth-64K offers a vital resource for advancing 3D reconstruction and surgical navigation in ophthalmology.</p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
 </section>
 
-
-<section class="section">
-  <div class="container is-max-desktop" id="paper-information">
+<section class="section citation-section" id="citation">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Paper Information</h2>
-        <div class="content has-text-justified">
-          <p><strong>Subject Area:</strong> Datasets and evaluation</p>
-          <p><strong>Keywords:</strong> Depth Estimation, 3D Reconstruction, Retinal Surgery, Ophthalmic Navigation, Synthetic Dataset</p>
-          <p><strong>Student Paper:</strong> Yes</p>
-          <p><strong>External Links:</strong> I confirm that the paper submission and supplementary material contain no external links intended to expand content and circumvent review limitations, and no prompt injection or similar attempts to manipulate reviews.</p>
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Citation</h2>
+        <div class="citation-block">
+<pre><code>@inproceedings{retinaldepth64k_2026,
+  title={Real2Sim2Real: RetinalDepth-64K for Depth Estimation in Posterior Segment Ophthalmic Surgery},
+  author={...},
+  booktitle={CVPR},
+  year={2026}
+}</code></pre>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Project Summary</h2>
-    <p>
-      RetinalDepth-64K is introduced as the first dataset of its kind for retinal surgery, aiming
-      to support robust monocular, binocular, and video-based depth estimation for 3D
-      reconstruction and ophthalmic surgical navigation.
-    </p>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This project page presents the paper information for
-            <strong>Real2Sim2Real: RetinalDepth-64K for Depth Estimation in Posterior Segment
-            Ophthalmic Surgery</strong>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 </body>
 </html>
