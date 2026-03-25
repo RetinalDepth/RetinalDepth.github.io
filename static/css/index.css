@@ -90,14 +90,21 @@ body {
 }
 
 .author-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 2rem;
-  row-gap: 0.3rem;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto 0.8rem;
   font-size: 1.2rem;
+}
+
+.author-row {
+  text-align: center;
+}
+
+.author-row + .author-row {
+  margin-top: 0.1rem;
+}
+
+.author-row .author-block + .author-block {
+  margin-left: 1.5rem;
 }
 
 .publication-institutions {
@@ -105,6 +112,15 @@ body {
   font-size: 1.15rem;
   line-height: 1.2;
   margin-bottom: 0.35rem;
+}
+
+.publication-institutions .author-row + .author-row {
+  margin-top: 0.15rem;
+}
+
+.publication-institutions .author-block + .author-block,
+.publication-notes .author-block + .author-block {
+  margin-left: 0.75rem;
 }
 
 .publication-notes {

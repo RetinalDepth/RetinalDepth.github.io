@@ -28,38 +28,52 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Real2Sim2Real: RetinalDepth-64K for Depth Estimation in Posterior Segment Ophthalmic Surgery</h1>
           <div class="is-size-5 publication-authors author-list">
-            <span class="author-block">
-              <a href="https://bingwendong.github.io/">Bingwen Dong</a><sup>1</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://www.ganliu.blog/">Gan Liu</a><sup>1</sup>
-            </span>
-            <span class="author-block">
-              Xiaoxi Lu<sup>1</sup>
-            </span>
-            <span class="author-block">
-              Yan Hu<sup>1</sup>
-            </span>
-            <span class="author-block">
-              Guangcheng Chen
-            </span>
-            <span class="author-block">
-              Jialu ZHANG
-            </span>
-            <span class="author-block">
-              Xiaoqing Zhang<sup>*</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://www.imed-lab.com/">Jiang Liu</a><sup>*</sup>
-            </span>
+            <div class="author-row">
+              <span class="author-block">
+                <a href="https://bingwendong.github.io/">Bingwen Dong</a><sup>1,*</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.ganliu.blog/">Gan Liu</a><sup>1,*</sup>
+              </span>
+              <span class="author-block">
+                Xiaoxi Lu<sup>1,*</sup>
+              </span>
+              <span class="author-block">
+                Guangcheng Chen<sup>1</sup>
+              </span>
+              <span class="author-block">
+                Jialu Zhang<sup>1</sup>
+              </span>
+            </div>
+            <div class="author-row">
+              <span class="author-block">
+                Yan Hu<sup>2,1</sup>
+              </span>
+              <span class="author-block">
+                Xiaoqing Zhang<sup>3,1,&dagger;</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.imed-lab.com/">Jiang Liu</a><sup>1,4,5,6,&dagger;</sup>
+              </span>
+            </div>
           </div>
 
           <div class="is-size-5 publication-authors publication-institutions">
-            <span class="author-block"><sup>1</sup>SUSTech</span>
+            <div class="author-row">
+              <span class="author-block"><sup>1</sup> SUSTech</span>
+              <span class="author-block"><sup>2</sup> Institute of AI for Industries CAS</span>
+              <span class="author-block"><sup>3</sup> Shenzhen Institutes of Advanced Technology CAS</span>
+            </div>
+            <div class="author-row">
+              <span class="author-block"><sup>4</sup> University of Nottingham Ningbo</span>
+              <span class="author-block"><sup>5</sup> Wenzhou Medical University</span>
+              <span class="author-block"><sup>6</sup> Changchun University</span>
+            </div>
           </div>
 
           <div class="is-size-5 publication-authors publication-notes">
-            <span class="author-block"><sup>*</sup> corresponding author</span>
+            <span class="author-block"><sup>*</sup> Equal contribution</span>
+            <span class="author-block"><sup>&dagger;</sup> Corresponding authors</span>
           </div>
 
           <div class="publication-venue is-size-4 has-text-centered">
@@ -110,7 +124,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3 has-text-centered">Abstract</h2>
         <div class="content has-text-justified abstract-placeholder">
-          <p>Accurate depth estimation is crucial for 3D reconstruction and precise navigation in ophthalmic fundus surgery. However, acquiring annotated data remains challenging due to the impracticality of depth sensors under surgical microscopes. To overcome this limitation, we introduce RetinalDepth-64K, a novel synthetic dataset comprising 64,000 stereo image pairs across 1,280 diverse scenes, developed through a Real2Sim2Real pipeline that transforms real-world fundus surgery videos into synthetic data and facilitates model deployment in real scenarios. We analyzed key characteristics such as intricate retinal textures from real-world videos to guide the Real-to-Sim phase, enabling realistic data synthesis. To improving dataset fidelity for depth estimation, we created 3D eye models using Blender with ultra-wide-field retinal textures, glass-modeled aqueous humor, and dynamic instrument trajectories, enhanced by post-processing to ensure photorealism. The dataset provides RGB images, depth maps, normal maps, and instrument segmentation masks from binocular view, supporting the training of monocular, binocular, and video-based depth estimation models to enhance robustness. In the Sim-to-Real phase, quantitative and qualitative experiments show that finetuning foundation models with RetinalDepth-64K produces accurate depth predictions for synthetic data. Comparative analysis on results of zeroshot and finetuned models further validates robust generalization to real fundus surgery scenes, offering significant potential to enhance surgical precision and support the training of novice surgeons through reliable depth cues. As the first dataset of its kind for retinal surgery, RetinalDepth-64K offers a vital resource for advancing 3D reconstruction and surgical navigation in ophthalmology.</p>
+          <p>Accurate depth estimation is crucial for 3D reconstruction and precise navigation in posterior segment ophthalmic surgery. However, acquiring annotated data remains challenging due to the impracticality of depth sensors under surgical microscopes. To overcome this limitation, we introduce RetinalDepth, a novel synthetic dataset comprising 44,800 temporal stereo image pairs across 896 diverse scenes for posterior segment surgery, developed via a Real2Sim2Real pipeline. In the Real-to-Sim phase, we model anatomically accurate eyes and instruments in Blender, integrating ultra-wide-field retinal textures, refractive aqueous humor, and dynamic trajectories, enhanced by post-processing for realism. RetinalDepth provides synchronized left and right RGB frames with pixel-perfect depth maps, surface normals, instrument segmentation masks, and camera parameters, enabling robust training of monocular, stereo, and video depth estimation models. In the Sim-to-Real phase, we introduce temporal depth variance, a novel metric for quantifying the stability of frame-to-frame depth estimation. Fine-tuning on RetinalDepth significantly boosts model performance on both synthetic and real surgical videos, enhancing generalization, surgical precision, and novice training. As the first synthetic benchmark for posterior segment surgery, RetinalDepth bridges the sim-to-real gap in ophthalmic computer vision.</p>
         </div>
       </div>
     </div>
